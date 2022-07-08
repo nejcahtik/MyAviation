@@ -61,8 +61,8 @@ Response example:\
 
 8. Request {main_url}/Flights?DepartureAirport={dep_air}&ArrivalAirport={arr_air}&DepartureTimeFrom={dep_time_from}&DepartureTimeTo={dep_time_to} - retrieve all the flights that departure from certain airport and fly to certain airport inside the given time interval ({dep_air} and {arr_air} should be ICAO codes and times should be of format "YYYY-MM-DD_HH:MM:SS")
 
-9. (Nice to have thing): Request {main_url}/Flights?TimeFrom={time_from}&TimeTo={time_to} - retrieve, for a given period of time, the list of the departure airports of all flights flying - partially or not - within this time range, and for each departure airport, the number of flights as well as the in-flight time for each aircraft. The in-flight time taken into account should be strictly within the time range, and the average time is expressed in minutes.
-Response example:
+9. (Nice to have thing): Request {main_url}/Flights?TimeFrom={time_from}&TimeTo={time_to} - retrieve, for a given period of time, the list of the departure airports of all flights flying - partially or not - within this time range, and for each departure airport, the number of flights as well as the in-flight time for each aircraft. The in-flight time taken into account should be strictly within the time range, and the average time is expressed in minutes.\
+Response example:\
 [[('EHAM', 3), (2, Decimal('2520')), (3, Decimal('600'))], [('LEBL', 2), (2, Decimal('2520')), (4, Decimal('1080'))], [('LIPE', 2), (5, Decimal('67320'))], [('LTAF', 2), (1, Decimal('720'))], [('LTCO', 2), (3, Decimal('600')), (4, Decimal('1080'))]]\
 
 
