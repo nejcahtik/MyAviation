@@ -66,7 +66,7 @@ Response example:
 [[('EHAM', 3), (2, Decimal('2520')), (3, Decimal('600'))], [('LEBL', 2), (2, Decimal('2520')), (4, Decimal('1080'))], [('LIPE', 2), (5, Decimal('67320'))], [('LTAF', 2), (1, Decimal('720'))], [('LTCO', 2), (3, Decimal('600')), (4, Decimal('1080'))]]\
 
 
-What does [('EHAM', 3), (2, Decimal('2520')), (3, Decimal('600'))] mean?\
+What does [('EHAM', 3), (2, Decimal('2520')), (3, Decimal('600'))] mean?
 
 "('EHAM', 3)" - there are three flights that fly (partially or not) in the given time interval departure from the airport 'EHAM'\
 
