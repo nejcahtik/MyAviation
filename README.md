@@ -63,7 +63,7 @@ Response example:\
 
 9. (Nice to have thing): Request {main_url}/Flights?TimeFrom={time_from}&TimeTo={time_to} - retrieve, for a given period of time, the list of the departure airports of all flights flying - partially or not - within this time range, and for each departure airport, the number of flights as well as the in-flight time for each aircraft. The in-flight time taken into account should be strictly within the time range, and the average time is expressed in minutes.\
 Response example:\
-[[('EHAM', 3), (2, Decimal('2520')), (3, Decimal('600'))], [('LEBL', 2), (2, Decimal('2520')), (4, Decimal('1080'))], [('LIPE', 2), (5, Decimal('67320'))], [('LTAF', 2), (1, Decimal('720'))], [('LTCO', 2), (3, Decimal('600')), (4, Decimal('1080'))]]\
+[[('EHAM', 3), (2, 2520), (3, 600)], [('LEBL', 2), (2, 2520)), (4, 1080)], [('LIPE', 2), (5, 67320)], [('LTAF', 2), (1, 720)], [('LTCO', 2), (3, 600')), (4, 1080)]]\
 
 
 What does [('EHAM', 3), (2, Decimal('2520')), (3, Decimal('600'))] mean?
