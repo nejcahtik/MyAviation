@@ -53,16 +53,16 @@ Response example:\
 Response example:\
 [{"id": 5, "departureAirport": "LTCO", "arrivalAirport": "LEBL", "departureTime": "2022-09-13 09:00:00", "arrivalTime": "2022-09-13 11:00:00", "aircraft": {"id": 3, "serialNumber": "12", "manufacturer": "Pipistrel"}}, {"id": 7, "departureAirport": "LTCO", "arrivalAirport": "OBBI", "departureTime": "2022-10-10 09:00:00", "arrivalTime": "2022-10-10 10:00:00", "aircraft": {"id": 4, "serialNumber": "13", "manufacturer": "Pilatus"}}]
 
-5. Request {main_url}/Flights?DepartureAirport={dep_air}&ArrivalAirport={arr_air} - retrieve all the flights that departure from certain departure airport and fly to certain arrival airport (both of the variables should be ICAO codes)\
+5. Request {main_url}/Flights?DepartureAirport={dep_air}&ArrivalAirport={arr_air} - retrieve all the flights that departure from certain departure airport and fly to certain arrival airport (both of the variables should be ICAO codes)
 
-6. Request {main_url}/Flights?DepartureTimeFrom={dep_time_from}&DepartureTimeTo={dep_time_to} - retrieve all the flights with departure time inside the given time interval (times should always be of format: "YYYY-MM-DD_HH:MM:SS")\
+6. Request {main_url}/Flights?DepartureTimeFrom={dep_time_from}&DepartureTimeTo={dep_time_to} - retrieve all the flights with departure time inside the given time interval (times should always be of format: "YYYY-MM-DD_HH:MM:SS")
 
 7. Request {main_url}/Flights?DepartureAirport={dep_air}&DepartureTimeFrom={dep_time_from}&DepartureTimeTo={dep_time_to} - retrieve all the flights that departure from certain airport inside the given time interval ({dep_air} should be a ICAO code and times should be of format: "YYYY-MM-DD_HH:MM:SS")
 
 8. Request {main_url}/Flights?DepartureAirport={dep_air}&ArrivalAirport={arr_air}&DepartureTimeFrom={dep_time_from}&DepartureTimeTo={dep_time_to} - retrieve all the flights that departure from certain airport and fly to certain airport inside the given time interval ({dep_air} and {arr_air} should be ICAO codes and times should be of format "YYYY-MM-DD_HH:MM:SS")
 
-9. (Nice to have thing): Request {main_url}/Flights?TimeFrom={time_from}&TimeTo={time_to} - retrieve, for a given period of time, the list of the departure airports of all flights flying - partially or not - within this time range, and for each departure airport, the number of flights as well as the in-flight time for each aircraft. The in-flight time taken into account should be strictly within the time range, and the average time is expressed in minutes.\
-Response example:\
+9. (Nice to have thing): Request {main_url}/Flights?TimeFrom={time_from}&TimeTo={time_to} - retrieve, for a given period of time, the list of the departure airports of all flights flying - partially or not - within this time range, and for each departure airport, the number of flights as well as the in-flight time for each aircraft. The in-flight time taken into account should be strictly within the time range, and the average time is expressed in minutes.
+Response example:
 [[('EHAM', 3), (2, Decimal('2520')), (3, Decimal('600'))], [('LEBL', 2), (2, Decimal('2520')), (4, Decimal('1080'))], [('LIPE', 2), (5, Decimal('67320'))], [('LTAF', 2), (1, Decimal('720'))], [('LTCO', 2), (3, Decimal('600')), (4, Decimal('1080'))]]\
 
 
