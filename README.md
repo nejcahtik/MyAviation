@@ -79,11 +79,11 @@ The format of the response is a subject of future improvements
 #### Aircrafts
 
 1. Request {main_url}/Aircrafts\
-body:\ 
-{\
-    "SerialNumber"="{serial_number}",\
-    "Manufacturer"="{manufacturer}"\
-}\
+body:
+{
+    "SerialNumber"="{serial_number}",
+    "Manufacturer"="{manufacturer}"
+}
 
 save a new aircraft into the database
 
