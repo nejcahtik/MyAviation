@@ -13,8 +13,8 @@
 
 #### Aircrafts
 
-1. Request: {main_url}/Aircrafts - retrieve all the aircrafts, saved in the database
-Response example:
+1. Request: {main_url}/Aircrafts - retrieve all the aircrafts, saved in the database\
+Response example:\
 [{"id": 1, "serialNumber": "10", "manufacturer": "Boeing"}, {"id": 2, "serialNumber": "11", "manufacturer": "Airbus"}, {"id": 3, "serialNumber": "12", "manufacturer": "Pipistrel"}, {"id": 4, "serialNumber": "13", "manufacturer": "Pilatus"}, {"id": 5, "serialNumber": "14", "manufacturer": "Boeing"}, {"id": 6, "serialNumber": "15", "manufacturer": "Airbus"}, {"id": 7, "serialNumber": "16", "manufacturer": "Pipistrel"}, {"id": 8, "serialNumber": "17", "manufacturer": "Pilatus"}, {"id": 9, "serialNumber": "18", "manufacturer": "Soyuz"}, {"id": 10, "serialNumber": "19", "manufacturer": "BlueOrigin"}]
 
 2. Request: {main_url}/Aircrafts?Id={Id} - retrieve the aircraft with certain Id (should be integer)
