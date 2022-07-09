@@ -66,13 +66,13 @@ Response example:\
 [[('EHAM', 3), (2, 2520), (3, 600)], [('LEBL', 2), (2, 2520)), (4, 1080)], [('LIPE', 2), (5, 67320)], [('LTAF', 2), (1, 720)], [('LTCO', 2), (3, 600')), (4, 1080)]]\
 
 
-What does [('EHAM', 3), (2, 2520), (3, 600)] mean?
+  What does [('EHAM', 3), (2, 2520), (3, 600)] mean?
 
-"('EHAM', 3)" - there are three flights that fly (partially or not) in the given time interval and departure from the airport 'EHAM'
+  "('EHAM', 3)" - there are three flights that fly (partially or not) in the given time interval and departure from the airport 'EHAM'
 
-"(2, 2520), (3, 600)" - flights that have aircrafts already assigned and departure from 'EHAM' are listed here - the list consists of aircraft id (first element of a tuple) and total in-flight time of this aircraft in the given time interval (second element of a tuple)
+  "(2, 2520), (3, 600)" - flights that have aircrafts already assigned and departure from 'EHAM' are listed here - the list consists of aircraft id (first element of a   tuple) and total in-flight time of this aircraft in the given time interval (second element of a tuple)
 
-The format of the response is a subject of future improvements
+  The format of the response is a subject of future improvements
 
 ### POST
 
@@ -85,7 +85,7 @@ body:
     "Manufacturer"="{manufacturer}"
 }
 
-save a new aircraft into the database
+  save a new aircraft into the database
 
 #### Flights
 
@@ -99,10 +99,10 @@ body:\
     "AircraftId": "{aircraft_id}"\
 }\
 
-save a new flight into the database\
+  save a new flight into the database\
 
-NOTE: Departure and arrival airport should be ICAO codes, times should be of format "YYYY-MM-DD_HH:MM:SS"\
-NOTE: AircraftId can be omitted (null value is saved to the database instead)\
+  NOTE: Departure and arrival airport should be ICAO codes, times should be of format "YYYY-MM-DD_HH:MM:SS"\
+  NOTE: AircraftId can be omitted (null value is saved to the database instead)\
 
 
 ### PUT
@@ -116,8 +116,8 @@ body:\
     "Manufacturer"="{manufacturer}"\
 }\
 
-update the aircraft with id={id}\
-The body should consist only of values needed to be updated
+  update the aircraft with id={id}\
+  The body should consist only of values needed to be updated
 
 #### Flights
 
@@ -131,10 +131,10 @@ body:\
     "AircraftId": "{aircraft_id}"\
 }\
 
-update the flight with id={id}\
-The body should consist only of values needed to be updated
+  update the flight with id={id}\
+  The body should consist only of values needed to be updated
 
-NOTE: Departure and arrival airport should be ICAO codes, times should be of format "YYYY-MM-DD_HH:MM:SS"\
+  NOTE: Departure and arrival airport should be ICAO codes, times should be of format "YYYY-MM-DD_HH:MM:SS"\
 
 ### DELETE
 
