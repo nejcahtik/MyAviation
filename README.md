@@ -131,10 +131,10 @@ body:\
     "AircraftId": "{aircraft_id}"\
 }\
 
-  * update the flight with id={id}\
-  * The body should consist only of values needed to be updated
+  update the flight with id={id}\
+  The body should consist only of values needed to be updated
 
-  * NOTE: Departure and arrival airport should be ICAO codes, times should be of format "YYYY-MM-DD_HH:MM:SS"\
+  NOTE: Departure and arrival airport should be ICAO codes, times should be of format "YYYY-MM-DD_HH:MM:SS"\
 
 ### DELETE
 
