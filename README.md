@@ -63,16 +63,8 @@ Response example:\
 
 9. (Nice to have thing): Request {main_url}/Flights?TimeFrom={time_from}&TimeTo={time_to} - retrieve, for a given period of time, the list of the departure airports of all flights flying - partially or not - within this time range, and for each departure airport, the number of flights as well as the in-flight time for each aircraft. The in-flight time taken into account should be strictly within the time range, and the average time is expressed in minutes.\
 Response example:\
-[[('EHAM', 3), (2, 2520), (3, 600)], [('LEBL', 2), (2, 2520)), (4, 1080)], [('LIPE', 2), (5, 67320)], [('LTAF', 2), (1, 720)], [('LTCO', 2), (3, 600')), (4, 1080)]]\
+[{"airportName": "EHAM", "count": 3, "analyzedFlights": [{"id": 2, "inFlightTime": 2520}, {"id": 3, "inFlightTime": 600}]}, {"airportName": "LEBL", "count": 2, "analyzedFlights": [{"id": 2, "inFlightTime": 2520}, {"id": 4, "inFlightTime": 1080}]}, {"airportName": "LIPE", "count": 2, "analyzedFlights": [{"id": 5, "inFlightTime": 67320}]}, {"airportName": "LTAF", "count": 2, "analyzedFlights": [{"id": 1, "inFlightTime": 720}]}, {"airportName": "LTCO", "count": 2, "analyzedFlights": [{"id": 3, "inFlightTime": 600}, {"id": 4, "inFlightTime": 1080}]}]
 
-
-  What does [('EHAM', 3), (2, 2520), (3, 600)] mean?
-
-  "('EHAM', 3)" - there are three flights that fly (partially or not) in the given time interval and departure from the airport 'EHAM'
-
-  "(2, 2520), (3, 600)" - flights that have aircrafts already assigned and departure from 'EHAM' are listed here - the list consists of aircraft id (first element of a   tuple) and total in-flight time of this aircraft in the given time interval (second element of a tuple)
-
-  The format of the response is a subject of future improvements
 
 ### POST
 
