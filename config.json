@@ -1,0 +1,15 @@
+{
+  "sql": {
+    "host": "localhost",
+    "user": "root",
+    "password": "jst12345",
+    "db": "MyAviation2",
+    "port": 3301
+
+  },
+
+  "server": {
+    "host": "localhost",
+    "port": 8080
+  }
+}
